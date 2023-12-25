@@ -1,7 +1,7 @@
 import { Button, Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react";
-import { BsChevronCompactDown } from "react-icons/bs";
-import usePlatforms from "../hooks/usePlatforms";
+import { BsChevronDown } from "react-icons/bs";
 import usePlatform from "../hooks/usePlatform";
+import usePlatforms from "../hooks/usePlatforms";
 import useGameQueryStore from "../store";
 
 const PlatformSelector = () => {
@@ -14,7 +14,7 @@ const PlatformSelector = () => {
 
   return (
     <Menu>
-      <MenuButton as={Button} rightIcon={<BsChevronCompactDown />}>
+      <MenuButton as={Button} rightIcon={<BsChevronDown />}>
         {selectedPlatform?.name || "Platforms"}
       </MenuButton>
       <MenuList>

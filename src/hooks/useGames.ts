@@ -14,7 +14,7 @@ const useGames = () => {
       apiClient.getAll({
         params: {
           genres: gameQuery.genreId,
-          platforms: gameQuery.platformId,
+          parent_platforms: gameQuery.platformId,
           ordering: gameQuery.sortOrder,
           search: gameQuery.searchText,
           page: pageParam,
